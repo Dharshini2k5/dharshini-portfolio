@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Dharshini T — Full Stack Java Developer">
+  <title>Dharshini T — Full Stack Java Developer</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scroll-progress-track"><div class="scroll-progress-bar" id="scrollProgress"></div></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">DT<span class="accent">.</span></a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#certs" class="nav-link">Certs</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Switch theme">🌓</button>
+        <a href="#" id="openResume" class="btn primary small">Resume</a>
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+    <div class="nav-links-mobile" id="navLinksMobile">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#certs" class="nav-link">Certs</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text" data-aos="fade-up">
+          <h1 class="hi">Hi, I'm <span class="accent">Dharshini T</span></h1>
+          <h2 class="typing" id="typing"></h2>
+          <p class="lead muted">
+            A Software Developer with a strong foundation in Java, Object-Oriented Programming, SQL, and
+            Web Development. I build web applications using Java, Spring Boot, HTML, CSS, JavaScript, and
+            MySQL — with hands-on, full-stack experience gained through internships and academic projects.
+          </p>
+
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn outline" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="stats-row" id="statsRow"></div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-up" data-aos-delay="150">
+          <div class="profile-frame">
+            <img src="assets/profile-placeholder.jpeg" alt="Dharshini T" class="profile-img" loading="lazy">
+          </div>
+          <div class="terminal-card" id="terminalCard">
+            <div class="terminal-header">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">dharshini@portfolio ~ </span>
+            </div>
+            <pre class="terminal-body" id="terminalBody"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" data-aos="fade-up">
+      <div class="eyebrow">WHO I AM</div>
+      <h2>About Me</h2>
+      <p class="muted section-lead">
+        I'm a Software Developer with a strong foundation in Java, Object-Oriented Programming, SQL, and
+        Web Development. I have hands-on experience building web applications using Java, Spring Boot,
+        HTML, CSS, JavaScript, and MySQL, with practical full-stack exposure gained through internships
+        and academic projects. I bring strong problem-solving, analytical, and communication skills, along
+        with a genuine interest in building reliable, scalable software.
+      </p>
+
+      <div class="grid two-col">
+        <div class="card glass">
+          <h3><i class="fas fa-lightbulb accent"></i> Interests</h3>
+          <ul class="muted compact-list">
+            <li>Full-Stack Java Development</li>
+            <li>Spring Boot & REST APIs</li>
+            <li>Database Design (MySQL)</li>
+            <li>Scalable Software Systems</li>
+          </ul>
+        </div>
+        <div class="card glass">
+          <h3><i class="fas fa-users accent"></i> Soft Skills</h3>
+          <ul class="muted compact-list">
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            <li>Communication</li>
+            <li>Adaptability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section" data-aos="fade-up">
+      <div class="eyebrow">WHAT I WORK WITH</div>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <section id="projects" class="section" data-aos="fade-up">
+      <div class="eyebrow">SELECTED WORK</div>
+      <h2>Projects</h2>
+      <p class="muted section-lead">Click a project for details. Filter by category below.</p>
+      <div class="project-filters" id="projectFilters"></div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section id="experience" class="section" data-aos="fade-up">
+      <div class="eyebrow">WHERE I'VE BEEN</div>
+      <h2>Experience</h2>
+      <div class="timeline" id="experienceList"></div>
+    </section>
+
+    <section id="education" class="section" data-aos="fade-up">
+      <div class="eyebrow">BACKGROUND</div>
+      <h2>Education</h2>
+      <div id="educationList" class="grid"></div>
+    </section>
+
+    <section id="certs" class="section" data-aos="fade-up">
+      <div class="eyebrow">CONTINUOUS LEARNING</div>
+      <h2>Certifications & Workshops</h2>
+      <div id="certsList" class="certs-grid"></div>
+    </section>
+
+    <section id="contact" class="section" data-aos="fade-up">
+      <div class="eyebrow">LET'S TALK</div>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="card glass contact-card">
+          <h4><i class="fas fa-envelope accent"></i> Email</h4>
+          <p id="emailText">dharshini30042005@gmail.com</p>
+          <button class="btn small" id="copyEmailBtn" style="margin-top:8px;">
+            <i class="far fa-copy"></i> Copy Email
+          </button>
+        </div>
+        <div class="card glass contact-card">
+          <h4><i class="fas fa-phone accent"></i> Phone</h4>
+          <p>+91 78451 83803</p>
+          <a href="tel:+917845183803" class="btn small" style="margin-top:8px; display:inline-block;">
+            <i class="fas fa-phone-alt"></i> Call Now
+          </a>
+        </div>
+        <div class="card glass contact-card">
+          <h4><i class="fas fa-share-alt accent"></i> Socials</h4>
+          <div class="contact-links">
+            <a href="https://github.com/Dharshini2k5" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/dharshini-t-3042k5" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer muted">
+      <p>Designed & built by Dharshini T · <a href="https://github.com/Dharshini2k5" target="_blank" rel="noopener">GitHub</a></p>
+    </footer>
+  </main>
+
+  <div id="chatbot-container" class="chatbot-container">
+    <div class="chatbot-header">
+      <div class="chatbot-title"><i class="fas fa-robot"></i> AI Assistant</div>
+      <button id="close-chat" class="chatbot-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="chatbot-messages" id="chatbot-messages"></div>
+    <div class="chatbot-input">
+      <input type="text" id="chat-input" placeholder="Ask about skills, projects..." />
+      <button id="chat-send"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+
+  <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Open chat assistant">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+
+  <div id="toast" class="toast">Email copied to clipboard!</div>
+
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="closeProjectModal" class="modal-close" aria-label="Close">✕</button>
+      <div id="projectContent"></div>
+    </div>
+  </div>
+
+  <div id="resumeModal" class="modal" aria-hidden="true">
+    <div class="modal-inner large">
+      <button id="closeResumeModal" class="modal-close" aria-label="Close">✕</button>
+      <iframe id="resumeFrame" src="assets/resume/Dharshini_Resume.pdf" title="Resume PDF"></iframe>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
